@@ -1,8 +1,10 @@
 # ASP.NET Core
-
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+
+
 
 trigger:
 - master
@@ -24,7 +26,4 @@ steps:
     azureSubscription: 'Free Trial (54d9567e-4453-4871-876e-734b1fa41d0a)'
     appType: 'webApp'
     WebAppName: 'loginapi123'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'apilogin123'
-    SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
