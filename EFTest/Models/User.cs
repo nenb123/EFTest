@@ -12,5 +12,6 @@ namespace EFTest.Models
         public int UerId { get; set; }
         public string UserName { get; set; }
         public string Address { get; set; }
+
     }
 }
